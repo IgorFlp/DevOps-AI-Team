@@ -38,7 +38,7 @@ style: |
 `docker build -t nexus-bot:v1 .`
 
 **2. Execução:**
-`docker run --rm -e GROQ_API_KEY="sk-..." nexus-bot:v1`
+`docker run --rm -e LLM_API_KEY="sk-..." nexus-bot:v1`
 
 ---
 

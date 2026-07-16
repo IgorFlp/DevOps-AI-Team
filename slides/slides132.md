@@ -62,5 +62,5 @@ metadata:
   name: nexus-secrets
 type: Opaque
 data:
-  GROQ_API_KEY: <SUA_CHAVE_EM_BASE64>
+  LLM_API_KEY: <SUA_CHAVE_EM_BASE64>
 ```
