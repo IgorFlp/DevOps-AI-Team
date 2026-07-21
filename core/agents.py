@@ -139,7 +139,7 @@ def get_sre_knowledge_agent(tools: Optional[List] = None) -> Agent:
     )
 
 
-def get_nexus_manager_agent(tools: Optional[List] = None) -> Agent:
+def get_nexus_manager_agent(tools: Optional[List] = None) -> Agent: 
     """Returns the Nexus Operations Manager (Orchestrator Agent)."""
     return Agent(
         role='Nexus Manager (Orquestrador de Operações)',
@@ -153,5 +153,5 @@ def get_nexus_manager_agent(tools: Optional[List] = None) -> Agent:
         verbose=True,
         allow_delegation=True
     )
-=True # <--- ESSENCIAL para ele conseguir mandar nos outros
-    )
+# Essential for delegation
+    

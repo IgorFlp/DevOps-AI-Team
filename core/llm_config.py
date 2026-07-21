@@ -6,7 +6,7 @@ load_dotenv()
 
 # Centraliza a inteligência do projeto
 nexus_llm = LLM(
-    model="openrouter/free",
+    model="openrouter/nvidia/nemotron-3-super-120b-a12b",
     api_key=os.getenv("LLM_API_KEY"),
     temperature=0.2
 )
