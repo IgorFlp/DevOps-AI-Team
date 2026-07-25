@@ -1,0 +1,23 @@
+{
+  "title": "Dynamic Incident Dashboard: Incidente de satura\u00e7\u00e3o de disco: monitorar porcentagem de disco livre, crescimento de uso, previs\u00e3o de satura\u00e7\u00e3o em 4 horas, alertas de uso >90%, tend\u00eancia de uso, hist\u00f3rico de uso, recomenda\u00e7\u00f5es de limpeza.",
+  "panels": [
+    {
+      "title": "Disk Usage Prediction",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "node_filesystem_avail_bytes"
+        }
+      ]
+    },
+    {
+      "title": "Error Rate Spike",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "rate(http_requests_total{status='500'}[5m])"
+        }
+      ]
+    }
+  ]
+}
